@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 //Classe disponibiliza um recurso web correspondente a entidade user
 
-@RestController
-@RequestMapping(value = "/users")
+@RestController // Indica que esta classe é um controlador REST, permitindo o Spring gerenciar as requisições HTTP
+@RequestMapping(value = "/users") // Define o caminho base do recurso como "/users"
 public class UserResource {
 	
 	//O tipo "ResponseEntity" é um tipo especifico do spring para retornar respostas de requisicoes WEB
