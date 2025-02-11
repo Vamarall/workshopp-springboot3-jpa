@@ -9,15 +9,17 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+/**
+ * Classe que representa a entidade User e será mapeada para um banco de dados.
+ */
 
-
-@Entity
-@Table(name= "tb_user")
+@Entity // Indica que esta classe é uma entidade JPA e será gerenciada pelo Hibernate
+@Table(name= "tb_user") // Define o nome da tabela no banco de dados como "tb_user"
 public class User implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id // Define o campo "id" como a chave primária da entidade
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // Especifica que o ID será gerado automaticamente pelo banco de dados
 	private Long id;
 	private String name;
 	private String email;
