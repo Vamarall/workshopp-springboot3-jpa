@@ -13,7 +13,7 @@ import com.educandoweb.course.repositories.UserRepository;
 public class UserService {
 	
 	@Autowired
-	private UserRepository repository;
+	private UserRepository repository;  // Injeta automaticamente o repositório de usuários
 	
 	
 	public List<User> findAll(){
