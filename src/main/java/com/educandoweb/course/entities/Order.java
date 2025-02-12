@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,8 +14,8 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
-
-@Entity
+@Entity // Indica que essa classe é uma entidade JPA, ou seja, será mapeada para uma
+		// tabela no banco de dados
 @Table(name = "tb_order") // Define o nome da tabela no banco de dados como "tb_order"
 public class Order implements Serializable {
 
@@ -22,10 +24,13 @@ public class Order implements Serializable {
 	@Id // Define o campo "id" como a chave primária da entidade
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
 	private Instant moment;
 
-	@ManyToOne
-	@JoinColumn(name = "client_id")
+	@ManyToOne // Define um relacionamento muitos-para-um (vários pedidos podem estar
+				// associados a um único usuário)
+	@JoinColumn(name = "client_id") // Especifica a chave estrangeira que referencia a entidade "User" no banco de
+									// dados
 	private User client;
 
 	public Order() {
