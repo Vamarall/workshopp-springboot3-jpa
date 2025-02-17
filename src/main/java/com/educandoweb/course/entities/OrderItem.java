@@ -15,7 +15,7 @@ public class OrderItem implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 
-	@EmbeddedId
+	@EmbeddedId // Usada para indicar que a chave primária é composta e definida por uma classe separada (OrderItemPk).
 	private OrderItemPk id = new OrderItemPk();
 	
 	private Integer quantity;

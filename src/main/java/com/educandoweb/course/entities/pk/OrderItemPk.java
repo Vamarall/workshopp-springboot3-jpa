@@ -10,7 +10,9 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
-@Embeddable
+// Classe auxiliar de chave primaria composta
+
+@Embeddable // Marca a classe como uma chave composta que pode ser usada dentro de uma entidade.
 public class OrderItemPk implements Serializable {
 
 	private static final long serialVersionUID = 1L;
