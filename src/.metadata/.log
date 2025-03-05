@@ -1,0 +1,66 @@
+!SESSION 2025-02-22 21:45:52.515 -----------------------------------------------
+eclipse.buildId=4.34.0.202411281622
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/vitoramaral/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/vitoramaral/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-22 21:45:53.533
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-22 21:46:17.855
+!MESSAGE Logback config file: /Users/vitoramaral/Java/SpringBoot/course/src/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-02-22 21:46:18.000
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-02-22 21:46:18.000
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-02-22 21:46:18.174
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-02-22 21:46:18.174
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-02-22 21:46:19.721
+!MESSAGE No search provider was registered. Tasks search is not available.
+!SESSION 2025-03-05 17:27:48.927 -----------------------------------------------
+eclipse.buildId=4.34.0.202411281622
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/vitoramaral/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/vitoramaral/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-05 17:27:50.279
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-03-05 17:27:54.416
+!MESSAGE Logback config file: /Users/vitoramaral/Java/SpringBoot/course/src/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-03-05 17:27:54.590
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-05 17:27:54.590
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-03-05 17:27:54.766
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-03-05 17:27:54.766
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-03-05 17:27:56.249
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.eclipse.core.resources 4 77 2025-03-05 17:29:08.210
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-03-05 17:29:08.210
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-03-05 17:29:08.210
+!MESSAGE /Users/vitoramaral/Java/SpringBoot/course overlaps the workspace location: /Users/vitoramaral/Java/SpringBoot/course/src
+
+!ENTRY org.eclipse.core.resources 4 77 2025-03-05 17:30:15.952
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-03-05 17:30:15.952
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-03-05 17:30:15.952
+!MESSAGE /Users/vitoramaral/Java/SpringBoot/course overlaps the workspace location: /Users/vitoramaral/Java/SpringBoot/course/src
