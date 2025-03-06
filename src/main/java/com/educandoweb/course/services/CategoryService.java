@@ -13,17 +13,16 @@ import com.educandoweb.course.repositories.UserRepository;
 
 @Component
 public class CategoryService {
-	
+
 	@Autowired
-	private CategoryRepository repository;  // Injeta automaticamente o repositório de usuários
-	
-	
-	public List<Category> findAll(){
+	private CategoryRepository repository; // Injeta automaticamente o repositório de usuários
+
+	public List<Category> findAll() {
 		return repository.findAll();
 	}
-	
+
 	public Category findByID(Long id) {
 		Optional<Category> obj = repository.findById(id);
-		return obj.get(); //Retorna o objeto(User) que esta dentro do optional
+		return obj.get(); // Retorna o objeto(User) que esta dentro do optional
 	}
 }

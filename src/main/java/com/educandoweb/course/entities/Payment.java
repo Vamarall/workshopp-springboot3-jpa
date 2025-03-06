@@ -17,23 +17,21 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "tb_payment")
 public class Payment implements Serializable {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id // Define o campo "id" como a chave primária da entidade
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private Instant moment;
-	
+
 	@JsonIgnore
 	@OneToOne
 	@MapsId // Usa o mesmo ID de Order
 	private Order order;
-	
-	
+
 	public Payment() {
 	}
-
 
 	public Payment(Long id, Instant moment, Order order) {
 		super();
@@ -42,42 +40,34 @@ public class Payment implements Serializable {
 		this.order = order;
 	}
 
-
 	public Long getId() {
 		return id;
 	}
-
 
 	public void setId(Long id) {
 		this.id = id;
 	}
 
-
 	public Instant getMoment() {
 		return moment;
 	}
-
 
 	public void setMoment(Instant moment) {
 		this.moment = moment;
 	}
 
-
 	public Order getOrder() {
 		return order;
 	}
-
 
 	public void setOrder(Order order) {
 		this.order = order;
 	}
 
-
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -90,7 +80,5 @@ public class Payment implements Serializable {
 		Payment other = (Payment) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
 
 }

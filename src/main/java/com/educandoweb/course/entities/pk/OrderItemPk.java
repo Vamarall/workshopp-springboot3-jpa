@@ -12,7 +12,8 @@ import jakarta.persistence.ManyToOne;
 
 // Classe auxiliar de chave primaria composta
 
-@Embeddable // Marca a classe como uma chave composta que pode ser usada dentro de uma entidade.
+@Embeddable // Marca a classe como uma chave composta que pode ser usada dentro de uma
+			// entidade.
 public class OrderItemPk implements Serializable {
 
 	private static final long serialVersionUID = 1L;

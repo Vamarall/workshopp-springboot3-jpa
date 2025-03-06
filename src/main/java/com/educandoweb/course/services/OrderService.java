@@ -13,17 +13,16 @@ import com.educandoweb.course.repositories.UserRepository;
 
 @Component
 public class OrderService {
-	
+
 	@Autowired
-	private OrderRepository repository;  // Injeta automaticamente o repositório de usuários
-	
-	
-	public List<Order> findAll(){
+	private OrderRepository repository; // Injeta automaticamente o repositório de usuários
+
+	public List<Order> findAll() {
 		return repository.findAll();
 	}
-	
+
 	public Order findByID(Long id) {
 		Optional<Order> obj = repository.findById(id);
-		return obj.get(); //Retorna o objeto(User) que esta dentro do optional
+		return obj.get(); // Retorna o objeto(User) que esta dentro do optional
 	}
 }

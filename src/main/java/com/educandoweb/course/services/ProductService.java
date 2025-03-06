@@ -15,17 +15,16 @@ import com.educandoweb.course.repositories.UserRepository;
 
 @Component
 public class ProductService {
-	
+
 	@Autowired
-	private ProductRepository repository;  // Injeta automaticamente o repositório de usuários
-	
-	
-	public List<Product> findAll(){
+	private ProductRepository repository; // Injeta automaticamente o repositório de usuários
+
+	public List<Product> findAll() {
 		return repository.findAll();
 	}
-	
+
 	public Product findByID(Long id) {
 		Optional<Product> obj = repository.findById(id);
-		return obj.get(); //Retorna o objeto(User) que esta dentro do optional
+		return obj.get(); // Retorna o objeto(User) que esta dentro do optional
 	}
 }

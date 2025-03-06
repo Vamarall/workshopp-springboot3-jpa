@@ -4,7 +4,6 @@ import com.educandoweb.course.entities.Category;
 
 import com.educandoweb.course.services.CategoryService;
 
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,13 +32,12 @@ public class CategoryResource {
 		return ResponseEntity.ok().body(list);
 
 	}
-	
-	@GetMapping(value = "/{id}") // indica que a requisicao vai aceitar um id dentro da URL 
+
+	@GetMapping(value = "/{id}") // indica que a requisicao vai aceitar um id dentro da URL
 	public ResponseEntity<Category> finfById(@PathVariable Long id) {
 		Category category = service.findByID(id);
-		
+
 		return ResponseEntity.ok().body(category);
 	}
-	
 
 }

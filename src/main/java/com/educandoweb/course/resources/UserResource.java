@@ -37,36 +37,34 @@ public class UserResource {
 		return ResponseEntity.ok().body(list);
 
 	}
-	
-	@GetMapping(value = "/{id}") // indica que a requisicao vai aceitar um id dentro da URL 
+
+	@GetMapping(value = "/{id}") // indica que a requisicao vai aceitar um id dentro da URL
 	public ResponseEntity<User> finfById(@PathVariable Long id) {
 		User user = service.findByID(id);
-		
+
 		return ResponseEntity.ok().body(user);
 	}
-	
+
 	@PostMapping
-	public ResponseEntity<User> insert(@RequestBody User obj){
+	public ResponseEntity<User> insert(@RequestBody User obj) {
 		obj = service.insert(obj);
-		
-		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
-				.path("/{id}").buildAndExpand(obj.getId()).toUri();
-	
+
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(obj.getId()).toUri();
+
 		return ResponseEntity.created(uri).body(obj);
-		
+
 	}
-	
+
 	@DeleteMapping(value = "/{id}")
-	public ResponseEntity<Void> delete(@PathVariable Long id){
+	public ResponseEntity<Void> delete(@PathVariable Long id) {
 		service.delete(id);
 		return ResponseEntity.noContent().build();
 	}
-	
+
 	@PutMapping(value = "/{id}")
-	public ResponseEntity<User> update(@PathVariable Long id,@RequestBody User obj){
+	public ResponseEntity<User> update(@PathVariable Long id, @RequestBody User obj) {
 		obj = service.update(id, obj);
 		return ResponseEntity.ok().body(obj);
 	}
-	
 
 }
